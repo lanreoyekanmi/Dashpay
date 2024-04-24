@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import './vendor.css';
 
 function App() {
   return (
@@ -164,10 +164,50 @@ function App() {
 </nav>
 
 </header>
+<aside id="sidebar" class="sidebar">
 
+  <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="ri-home-4-fill"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="ri-pie-chart-2-fill"></i><span>Statistic</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="ri-chat-smile-fill"></i><span>Need Help?</span>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+           
+          </li>
+        </ul>
+      </li>
 
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="ri-wallet-fill"></i><span>Wallet</span>
+        </a>
+      </li>
 
-    </div>
+      <li class="nav-heading">Pages</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="users-profile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li>
+</ul>
+
+  </aside>
+
+  </div>
   );
 }
 
